@@ -38,6 +38,9 @@ public class Program {
             System.out.println("Method: " + method);
         }
 
+        Method makeGetInfo = clazz.getMethod("getInfo");          // вызов метода у объекта
+        makeGetInfo.invoke(animalInstance);
+
         Method makeSoundMethod = clazz.getMethod("makeSound");    // вызов метода у объекта
         makeSoundMethod.invoke(animalInstance);
     }
